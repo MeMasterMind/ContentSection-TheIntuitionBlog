@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto"/>
+            <script src="https://momentjs.com/downloads/moment.js"></script>
+  </head>
+  <body>
+    <div class="light section bitcoinsec" style="height: 570px">
+      <div class="yesterdaysPrice">
+    <h1>Intuition Practice with Bitcoin</h1>
+    <span class="title">Yesterday's Bitcoin Price Index (BPI) was</span>
+    <span class="yesterdayBPI count" id="yesterdayBPI"></span>
+    <span style="margin-top: 20px;">Has the current price (saved on refresh) gone up or down?</span>
+    <span>Click on the arrow below:</span>
+  </div>
+
+  <div class="arrows">
+  <button class="arrow left" id="up">
+    <svg width="60px" height="80px" viewBox="0 0 50 80" xml:space="preserve">
+      <polyline fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" points="
+  	45.63,75.8 0.375,38.087 45.63,0.375 "/>
+    </svg>  
+  </button>
+  <button class="arrow right" id="down">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60px" height="80px" viewBox="0 0 50 80" xml:space="preserve">
+      <polyline fill="none" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" points="
+  	0.375,0.375 45.63,38.087 0.375,75.8 "/>
+    </svg>
+  </button>
+    </div>
+
+  <div class="incorrect hide" id="inc">
+    <h2>Try again!</h2>
+    <span>It went </span><span id="predictionNO?"></span><span>!</span>
+  </div>
+
+  <div class="correct hide" id="c">
+    <h2>Good intuition!</h2>
+    <span>It went </span><span id="predictionYES?"></span><span>!</span>
+  </div>
+  <span class="hide" id="currentBPI"></span>
+  <span class="hide" id="time"></span>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <br><br>
+  <button class="refresh" onclick="window.location.reload()">Refresh</button>
+    <span class="credit">Powered by <a style="color: #fff; text-decoration:none;"href="https://www.coindesk.com/price/bitcoin">CoinDesk </a></span>
+    </div>
+
+<!-- Random Image Generator-->
+      <div class="wrapper">
+        <h1 class="heading-image-gen">Intuition Practice with Images</h1>
+        <p>Just close your eyes and then click on the button below for quality camera clicked images to practice your intuitive sensing.</p>
+        <div class="main">
+          <Button onclick="showImg(); i++"class="refresh" style="width: auto; padding: 0 17px 0 17px;     transform: translate(10px);">
+            Load a Random Image
+          </Button>
+        </div>
+      </div>
+    
+    <script src="script.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  </body>
+</html>

@@ -1,0 +1,251 @@
+:root{
+  --dark-color: #660066;
+  --light-color: #90348D;
+  --error: #F62451;
+  --success: #1FD78D;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  color: white;
+
+}
+
+.light{
+  background: var(--light-color);
+}
+
+.dark{
+  background: var(--dark-color);
+}
+
+.section{
+  width: 100%;
+}
+
+html{
+    scroll-behavior: smooth;
+  }
+
+  button {
+    -webkit-appearance: none;
+    background: transparent;
+    border: 0;
+    outline:0;
+  }
+
+  .yesterdaysPrice{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    flex-flow: column wrap;
+
+  }
+
+  .title{
+    font-size: 25px;
+  }
+
+  .yesterdayBPI{
+    margin-top: 50px;
+    font-size: 40px;
+  }
+  .arrows{
+    position: relative;
+    transform: translate(0, 50px)
+  }
+  .arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -45px;
+    margin-left: -35px;
+    width: 70px;
+    height: 90px;
+  }
+
+  .left {
+    left: 42%;
+    transform: rotate(90deg)
+  }
+
+  .right {
+    left: 58%;
+    transform: rotate(90deg)
+  }
+
+  .left:hover polyline,
+  .left:focus polyline {
+    stroke-width: 3;
+  }
+  .bitcoinsec{
+     height: 620px !important;
+    padding-top: 100px;
+    padding-bottom: 100px;
+   }
+  .left:active polyline {
+    stroke-width: 6;
+    transition: all 100ms ease-in-out;
+  }
+
+  .right:hover polyline,
+  .right:focus polyline {
+    stroke-width: 3;
+  }
+
+  .right:active polyline {
+    stroke-width: 6;
+    transition: all 100ms ease-in-out;
+  }
+
+  polyline {
+    transition: all 250ms ease-in-out;
+  }
+
+
+  .incorrect{
+    background: var(--error);
+    transform: translateY(120px);
+      height: 270px;
+    width: 100%;
+    padding-top: 20px;
+  }
+  .correct{
+    background: var(--success);
+     transform: translateY(120px);
+       height: 270px;
+    width: 100%;
+    padding-top: 20px;
+  }
+
+  .hide{
+    display: none !important;
+  }
+
+  h2{
+    font-size: 40px;
+  }
+
+  .refresh{
+    width: 100px;
+    height: 50px;
+    background: var(--dark-color);
+    outline: none;
+    border-radius: 25px;
+    color: #fff;
+    cursor: pointer;
+    transform: translateY(120px);
+    margin: 30px;
+    transition: all;
+  }
+
+  @media only screen and (max-width: 450px) {
+    h1{
+      font-size: 25px !important;
+    }
+    .title{
+      font-size: 20px;
+    }
+    .bitcoinsec{
+      height: 620px !important;
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+     .left{
+      left:  33%;
+    }
+    .right{
+     right : 63%;
+    }
+  }
+
+  h1{
+    font-size: 40px;
+  }
+        img{
+
+            max-width:100%;
+            width: 500px;
+            height: auto;
+        }
+        .the-btn{
+            margin-top:10px;
+            width: 230px;
+            height: 40px;
+            border-radius: 15px;
+            outline:none;
+            border:none;
+            background: #90348D;
+            color:white;
+            cursor:pointer;
+            transition: 0.3s all;
+        }
+        .the-btn:hover{
+            background: #660066;
+        }
+        .center{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .back-btn{
+            margin-top: 15px;
+            width: 100px;
+            height: 40px;
+            border-radius: 15px;
+            outline:none;
+            border:none;
+            background: #90348D;
+            color:white;
+            cursor:pointer; 
+            transition: 0.3s all;
+        }
+        .back-btn:hover{
+            background: #660066;
+
+        }
+        .flex{
+            display:flex;
+            justify-content:center;
+            flex-wrap: row wrap;
+        }
+
+        @media only screen and (max-width: 400px){
+
+            .main{
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             }
+             .change{
+                 margin-top:0 !important;
+             }
+             .credit{
+                 font-size: 8px;
+                 
+             }
+             .yesterdaysPrice{
+               padding: 50px;
+             }
+        }
+.heading-image-gen{
+  color: var(--light-color);
+  font-size: 40px;
+}
+
+.wrapper{
+  color: var(--light-color);
+  padding: 50px;
+}
+
+.credit{
+  color: white;
+  display: block;
+  margin: auto;
+  font-size: 10px;
+  transform: translateY(200px);
+}
