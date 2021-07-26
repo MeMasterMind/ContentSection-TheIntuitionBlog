@@ -101,9 +101,9 @@ function showImg() {
   var collections = ["89287309", "47454235", "3330452", "3410937", "8253641"]
 var randomID = collections[Math.floor(Math.random() * collections.length)]
 var unsplashLink = "https://source.unsplash.com/collection/" + randomID +"/"+i
-var imgHtml = '<img style="width:auto; height:300px;"src="'+unsplashLink+'" />'
+var imgHtml = '<img style="width:auto; height:400px;"src="'+unsplashLink+'" />'
 Swal.fire({
-  title: "Title",
+  position: "bottom",
   html: imgHtml,
  })
 
